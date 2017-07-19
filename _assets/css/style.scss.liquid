@@ -1,0 +1,94 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+* {
+  font-family: 'Zilla Slab', serif;
+  color: #2E2D27;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  width:80%;
+  margin:0 auto;
+
+  svg.logo {
+    width:80px;
+    height:80px;
+    display:inline-block;
+    vertical-align:bottom;
+  }
+  h1 {
+    font-size: 400%;
+
+  }
+}
+
+footer {
+  width: 80%;
+  margin:0 auto;
+}
+
+hr {
+  border:none;
+  height: 3px;
+  background-color: #2E2D27;
+  width: 80%;
+
+
+
+}
+
+.grid-gallery {
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    h3 {
+      margin:0;
+      padding:0 0 0.5em;
+    }
+    p {
+      margin:0;
+    }
+  }
+
+  ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+
+}
+
+.grid-wrap {
+  max-width:69em;
+  margin:0 auto;
+  padding: 0 1em 1.875em;
+}
+
+.grid {
+  margin: 0 auto;
+  li {
+    width: 25%;
+    float:left;
+    cursor: pointer;
+  }
+  li:hover figure {
+    opacity: 0.7;
+  }
+  figure {
+    padding: 15px;
+    transition: opacity 0.2s;
+
+  }
+  figcaption {
+    background-color: #efefef;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,47 @@
+---
+layout: home
+---
+
+<header class="text-center">
+
+  <h1> {% include logo.svg %} St Louis Game Developer News</h1>
+
+
+
+</header>
+
+<hr />
+
+<div id="grid-gallery" class="grid-gallery">
+
+  <section class="grid-wrap">
+    <ul class="grid">
+      <li class="grid-sizer"></li>
+
+      {% assign sorted_issues = (site.issues | sort 'date') %}
+      {% for issue in sorted_issues %}
+
+        <li>
+
+          <a href="{{ issue.url }}">
+            <figure>
+              <figcaption class="text-center">
+                <h3>Issue {{ issue.title }}</h3>
+                <p>{{ issue.date | date_to_long_string }}</p>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
+<hr />
+
+<footer>
+
+  <p>Some kind of footer can go here?</p>
+
+</footer>
